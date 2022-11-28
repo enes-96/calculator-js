@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="/src/script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+
+  <body class="grid grid-rows-5 grid-cols-4 text-white h-screen w-full">
+    <div
+      class="output col-span-full bg-white flex items-end justify-around text-green-400 flex-col p-3 break-words break-all"
+    >
+      <div data-previous-operand class="text-4xl"></div>
+      <div data-current-operand class="text-6xl"></div>
+    </div>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300 col-span-2"
+      data-all-clear
+    >
+      AC
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-delete
+    >
+      DEL
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-operation
+    >
+      ÷
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      1
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      2
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      3
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-operation
+    >
+      *
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      4
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      5
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      6
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-operation
+    >
+      +
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      7
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      8
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      9
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-operation
+    >
+      -
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      .
+    </button>
+    <button
+      class="cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-number
+    >
+      0
+    </button>
+    <button
+      class="col-span-2 cursor-pointer text-4xl outline-none bg-green-400 border border-solid border-green-500 hover:bg-green-300"
+      data-equals
+    >
+      =
+    </button>
+  </body>
+</html>
