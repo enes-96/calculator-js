@@ -9,12 +9,14 @@ class Calculator {
 
   clear() {
     this.currentOperand = "";
+    console.log(`display is removed`);
     this.previousOperand = "";
     this.operation = undefined;
   }
 
   delete() {
     this.currentOperand = this.currentOperand.toString().slice(0, -1);
+    console.log(this.currentOperand);
   }
 
   appendNumber(number) {
@@ -23,7 +25,7 @@ class Calculator {
   }
 
   chooseOperation(operation) {
-    if (this.currentOperand === "") return;
+    if (this.currentOperand === "") return console.log("put a number");
     if (this.previousOperand !== "") {
       this.compute();
     }
@@ -40,15 +42,21 @@ class Calculator {
     switch (this.operation) {
       case "+":
         computation = prev + current;
+        console.log(computation);
         break;
       case "-":
         computation = prev - current;
+        console.log(computation);
+
         break;
       case "*":
         computation = prev * current;
+        console.log(computation);
+
         break;
       case "÷":
         computation = prev / current;
+        console.log(computation);
         break;
       default:
         return;
@@ -81,6 +89,7 @@ class Calculator {
     this.currentOperandTextElement.innerText = this.getDisplayNumber(
       this.currentOperand
     );
+    this.currentOperandTextElement.style.color = "green";
     if (this.operation != null) {
       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
         this.previousOperand
