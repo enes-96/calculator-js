@@ -111,6 +111,7 @@ const previousOperandTextElement = document.querySelector(
 const currentOperandTextElement = document.querySelector(
   "[data-current-operand]"
 );
+const outputCalc = document.querySelector(".output");
 
 const calculator = new Calculator(
   previousOperandTextElement,
@@ -144,4 +145,58 @@ allClearButton.addEventListener("click", (button) => {
 deleteButton.addEventListener("click", (button) => {
   calculator.delete();
   calculator.updateDisplay();
+});
+
+const darkModeIcon = document.querySelector("#dark-mode");
+
+darkModeIcon.style.cursor = "pointer";
+
+darkModeIcon.addEventListener("click", () => {
+  darkModeIcon.addEventListener("click", () => {
+    if ((equalsButton.style.backgroundColor = "black")) {
+      location.reload();
+    }
+  });
+  darkModeIcon.style.fill = "white";
+  numberButtons.forEach((button) => {
+    button.style.backgroundColor = "black";
+    button.addEventListener("mouseover", () => {
+      button.style.backgroundColor = "gray";
+    });
+    button.addEventListener("mouseout", () => {
+      button.style.backgroundColor = "black";
+    });
+  });
+
+  operationButtons.forEach((button) => {
+    button.style.backgroundColor = "black";
+    button.addEventListener("mouseover", () => {
+      button.style.backgroundColor = "gray";
+    });
+    button.addEventListener("mouseout", () => {
+      button.style.backgroundColor = "black";
+    });
+  });
+  equalsButton.addEventListener("mouseover", () => {
+    equalsButton.style.backgroundColor = "gray";
+  });
+  equalsButton.addEventListener("mouseout", () => {
+    equalsButton.style.backgroundColor = "black";
+  });
+  allClearButton.addEventListener("mouseover", () => {
+    allClearButton.style.backgroundColor = "gray";
+  });
+  allClearButton.addEventListener("mouseout", () => {
+    allClearButton.style.backgroundColor = "black";
+  });
+  deleteButton.addEventListener("mouseover", () => {
+    deleteButton.style.backgroundColor = "gray";
+  });
+  deleteButton.addEventListener("mouseout", () => {
+    deleteButton.style.backgroundColor = "black";
+  });
+  deleteButton.style.backgroundColor = "black";
+  allClearButton.style.backgroundColor = "black";
+  equalsButton.style.backgroundColor = "black";
+  outputCalc.style.backgroundColor = "black";
 });
